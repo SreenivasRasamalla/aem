@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:deviceGroups="[/etc/mobile/groups/responsive]"
+        cq:lastModified="{Date}2021-06-12T13:19:10.394+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/aemfirst/settings/wcm/templates/content-page"
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="aemfirst/components/structure/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <languagenavigation
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aemfirst/components/content/languagenavigation"
+                navigationRoot="/content/aemfirst/"
+                structureDepth="1"/>
+            <search
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aemfirst/components/content/search"
+                searchRoot="/content/aemfirst/"/>
+            <navigation
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aemfirst/components/content/navigation"
+                navigationRoot="/content/aemfirst/">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="4"
+                        width="8"/>
+                </cq:responsive>
+            </navigation>
+            <breadcrumb
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aemfirst/components/content/breadcrumb"/>
+            <editablestructurecom
+                jcr:created="{Date}2021-06-10T22:21:01.188+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-06-10T22:21:01.188+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aemfirst/components/structure/editablestructurecomponent"/>
+            <firststructurecompon
+                jcr:created="{Date}2021-06-11T14:22:56.484+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-06-11T14:22:56.484+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aemfirst/components/structure/firststructurecomponent"
+                editable="{Boolean}true"/>
+            <responsivegrid
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid"
+                editable="{Boolean}true">
+                <cq:responsive jcr:primaryType="nt:unstructured"/>
+            </responsivegrid>
+            <designcomponent
+                jcr:created="{Date}2021-06-12T13:19:10.387+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-06-12T13:19:10.387+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aemfirst/components/content/aemfirst/designcomponent"/>
+        </root>
+        <cq:responsive jcr:primaryType="nt:unstructured">
+            <breakpoints jcr:primaryType="nt:unstructured">
+                <phone
+                    jcr:primaryType="nt:unstructured"
+                    title="Smaller Screen"
+                    width="{Long}650"/>
+                <tablet
+                    jcr:primaryType="nt:unstructured"
+                    title="Tablet"
+                    width="{Long}1200"/>
+            </breakpoints>
+        </cq:responsive>
+    </jcr:content>
+</jcr:root>

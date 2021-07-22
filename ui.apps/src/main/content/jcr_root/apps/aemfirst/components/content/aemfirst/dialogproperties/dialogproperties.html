@@ -1,0 +1,27 @@
+<h1> DIALOG PROPERTIES </h1>
+                       
+<h3> cq:dialog Using Sightly  </h3>
+
+<div>
+		<h3>${properties.title}</h3>
+		<h3>${properties.description}</h3>
+</div>
+--------------------------------------------------------------------------------------------------
+ <h3> cq:dialog Using WCMPojo to Sightly </h3>
+
+<div  data-sly-use.obj="com.aem.dialogproperties.wcmpojo.MyPojo">
+
+        <h2>${obj.title}</h2>
+		<h2>${obj.description}</h2>
+
+</div>
+--------------------------------------------------------------------------------------------------
+<h3> cq:dialog Using Sling to Sightly </h3>
+
+<div data-sly-use.obj="com.aem.aemfirst.core.mymodel.MyFirstModel">
+
+${obj.title}
+${obj.description}
+
+</div>
+--------------------------------------------------------------------------------------------------

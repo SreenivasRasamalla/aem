@@ -1,0 +1,11 @@
+<h3>Test Structure Component </h3>
+
+<sly data-sly-include="/libs/wcm/core/components/init/init.jsp"/>
+
+<sly data-sly-use.clientLib="${'/libs/granite/sightly/templates/clientlib.html'}"/>
+<sly data-sly-call="${clientLib.all @ categories='http.config'}"/>	
+
+
+<div data-sly-resource="${'header' @resourceType = 'wcm/foundation/components/parsys'}"></div>
+
+
